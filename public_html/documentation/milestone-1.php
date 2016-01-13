@@ -7,7 +7,7 @@
 	</head>
 	<header>
 		<nav>
-			<h1>Purpose, audience, goal documentation</h1>
+			<h1>Milestone-1 Purpose, audience, goal documentation</h1>
 
 			<h2>Purpose</h2>
 			<p>The purpose of my webpage is to provide me with a professional online presence that will open doors to things like employment. </p>
