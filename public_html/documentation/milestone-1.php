@@ -6,7 +6,6 @@
 
 	</head>
 	<header>
-		<nav>
 			<h1>Milestone-1 Purpose, audience, goal documentation</h1>
 
 			<h2>Purpose</h2>
@@ -19,7 +18,6 @@
 			<p>The goal of my personal web page is to help me gain full time employment with potiental employers and also help me gain exposure into the coding world for possible freelance work and networking.</p>
 
 			<a href="persona.php"> Persona Documentation</a>
-		</nav>
 	</header>
 
 
