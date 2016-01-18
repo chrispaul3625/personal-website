@@ -18,6 +18,7 @@
 			more detailed and specific questions for me during an interview.</p>
 
 			<a href="milestone-1.php"> Purpose, audience, goal documentation </a>
+			<p><a href="usecase.php"> Use Case Documentation </a></p>
 
 		</header>
 	</body>

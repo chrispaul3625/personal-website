@@ -17,7 +17,8 @@
 			<h4>Goal</h4>
 			<p>The goal of my personal web page is to help me gain full time employment with potiental employers and also help me gain exposure into the coding world for possible freelance work and networking.</p>
 
-			<a href="persona.php"> Persona Documentation</a>
+			<a href="persona.php"> Persona Documentation </a>
+		<p><a href="usecase.php"> Use Case Documentation </a></p>
 	</header>
 
 
