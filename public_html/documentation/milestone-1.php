@@ -5,7 +5,6 @@
 		<title>My personal web page.</title>
 
 	</head>
-	<header>
 			<h1>Milestone-1 Purpose, audience, goal documentation</h1>
 
 			<h2>Purpose</h2>
@@ -19,7 +18,6 @@
 
 			<a href="persona.php"> Persona Documentation </a>
 		<p><a href="usecase.php"> Use Case Documentation </a></p>
-	</header>
-
 
 	</body>
+</html>

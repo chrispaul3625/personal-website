@@ -5,7 +5,6 @@
 		<title> Use Case Documentation for my personal web page</title>
 	</head>
 	<body>
-		<header>
 			<h1>Milestone-1 Use Case Documentation </h1>
 			<p> User will open the webpage usig a computer or smartphone prior to an interview. The user will be allowed
 			to navigate the page and read my professional history. They will have links to my resume and links to works
@@ -15,5 +14,5 @@
 			possible job interview/hire for work.</p>
 			<a href="milestone-1.php"> Purpose, audience, goal documentation </a>
 				<p><a href="persona.php"> Persona Documentation </a></p>
-		</header>
 	</body>
+</html>
