@@ -13,6 +13,6 @@
 			portfolio. The user will be able to accomplish their goals of obtaining important information regaurding a
 			possible job interview/hire for work.</p>
 			<a href="milestone-1.php"> Purpose, audience, goal documentation </a>
-				<p><a href="persona.php"> Persona Documentation </a></p>
+				<div><a href="persona.php"> Persona Documentation </a></div>
 	</body>
 </html>

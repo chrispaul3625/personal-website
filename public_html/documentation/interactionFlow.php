@@ -5,9 +5,9 @@
 		<title> Interaction Flow </title>
 	</head>
 	<body>
-		<p>
+		<div>
 			<h1>Interaction Flow</h1>
-		<img src="images/interactionFlow.svg"/>
-		</p>
+		<img src="images/interactionFlow.svg">
+		</div>
 	</body>
 </html>
