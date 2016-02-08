@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>My personal web page.</title>
+		<?php require_once(dirname(__DIR__) . "/head-tags/head-tags.html"); ?>
 
 	</head>
 			<h1>Milestone-1 Purpose, audience, goal documentation</h1>

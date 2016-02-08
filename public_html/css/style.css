@@ -1,0 +1,38 @@
+body {
+	margin: 5%;
+}
+
+div {
+	margin-inside: 2%;
+}
+
+div.jumbotron {
+	background-color: white;
+	padding:5%;
+}
+
+nav {
+	background-color: black;
+}
+a.thumbnail {
+	border-color: white;
+	background-color: white;
+}
+
+a.href {
+	border-color: white;
+	background-color: white;
+}
+
+div.container-fluid {
+	background-color: black;
+}
+
+
+ul.coding {
+	float: right;
+}
+
+img.class {
+	float: left;
+}
