@@ -45,10 +45,10 @@
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
-									<li class="active"><a href="#">LOGO <span class="sr-only">(current)</span></a></li>
+									<li class="active"><a href="#">CP<span class="sr-only">(current)</span></a></li>
 									<li><a href="aboutMe.php">About Me</a></li>
-									<li><a href="pages/portfolio.php">Portfolio</a></li>
-									<li><a href="pages/contactMe.php">Contact Me</a></li>
+									<li><a href="resume.php">Resume </a></li>
+									<li><a href="contactMe.php">Contact Me</a></li>
 							</div><!-- /.navbar-collapse -->
 						</div><!-- /.container-fluid -->
 					</nav>
@@ -146,14 +146,15 @@
 									</p>
 									<div class="content-box">
 										<p>
-											Column 5
+										<h2> Check Out Some Of My Work on GitHub</h2>
+										<a href="https://github.com/chrispaul3625">Click Here To Check Out My GitHub Account!</a>
 										</p>
 									</div>
 									<div class="row">
 										<div class="col-md-12">
 											<div class="content-box">
 												<p>
-													Column 6
+
 												</p>
 											</div>
 										</div>
