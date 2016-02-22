@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang='en' xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang='en' xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+		xmlns="http://www.w3.org/1999/html">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -64,14 +65,14 @@
 							<div class="content-box">
 								<div class="jumbotron">
 
-									<h2>Connect and follow me on Twitter and Linked in</h2>
+									<h2>Connect with and follow me</h2>
 
 									<p>  <a href="https://twitter.com/chrispaul3625" class="btn btn-social-icon btn-twitter">
-											<span class="fa fa-twitter"></span>
+											<span class="fa fa-twitter"></span> Follow Me On Twitter!
 
 										</a>  </p>
 									<p>  <a href="https://www.linkedin.com/in/christopher-paul-669486112" class="btn btn-social-icon btn-linkedin">
-											<span class="fa fa-linkedin"></span>
+											<span class="fa fa-linkedin"></span> Check me out on Linkedin
 
 										</a>  </p>
 								</div>
@@ -79,6 +80,14 @@
 						</div>
 						<div class="col-md-6">
 							<div class="content-box">
+								<div class="jumbotron">
+
+									<h2> Contact Information</h2>
+									<h3>Email</h3>
+									<a href="mailto:christopher@christopherapaul.com"> christopher@christopherapaul.com</a>
+									<h3> Cell </h3>
+									<p>505-249-2236</p>
+									<h3> </h3>
 
 							</div>
 						</div>
