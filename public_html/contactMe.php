@@ -50,7 +50,7 @@
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
 									<li class="active"><a href="#">CP <span class="sr-only">(current)</span></a></li>
-									<li><a href="aboutMe.php">About Me</a></li>
+									<li><a href="index.php">About Me</a></li>
 									<li><a href="resume.php">Resume</a></li>
 									<li><a href="contactMe.php">Contact Me</a></li>
 							</div><!-- /.navbar-collapse -->
