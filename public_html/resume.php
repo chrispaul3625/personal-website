@@ -54,8 +54,6 @@
 					</nav>
 				</div>
 			</header>
-			<body>
-
 				<div class="col-md-12">
 					<div class="content-box">
 						<h1> Christopher Paul</h1>
@@ -151,10 +149,7 @@
 					</div>
 			</body>
 	<footer>
-		<div class="scroll-top-wrapper ">
-	<span class="scroll-top-inner">
-		<i class="fa fa-2x fa-arrow-circle-up"></i>
-	</span>
+
 		</div>
 		© 2016 Christopher A Paul
 	</footer>
