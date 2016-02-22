@@ -23,7 +23,8 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
 				  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
 				  crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+		<link rel="script" href="javascript/style.js">
 	</head>
 	<body class="sfooter">
 		<div class="sfooter-content">
@@ -45,9 +46,9 @@
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
 									<li class="active"><a href="#">LOGO <span class="sr-only">(current)</span></a></li>
-									<li><a href="#">About Me</a></li>
-									<li><a href="#">Portfolio</a></li>
-									<li><a href="#">Contact Me</a></li>
+									<li><a href="aboutMe.php">About Me</a></li>
+									<li><a href="pages/portfolio.php">Portfolio</a></li>
+									<li><a href="pages/contactMe.php">Contact Me</a></li>
 							</div><!-- /.navbar-collapse -->
 						</div><!-- /.container-fluid -->
 					</nav>
@@ -133,7 +134,14 @@
 									<h2> Interests And Fun Facts About Me</h2>
 									<p>
 									<ul>
-										<li> </li>
+										<li> I love getting out into nature.</li>
+										<li> I'm somewhat of a professional Iphone photographer. </li>
+										<li> I enjoy being out on the water whether it be on a boat, paddle board, surf board, or simply just swimming.</li>
+										<li> Staying active and fit, a healthy body = a healthy mind! </li>
+										<li> I am a very visual and hands on kind of learner. </li>
+										<li> I enjoy interacting with and meeting new people. </li>
+										<li> I have 3 dogs, one is more like a horse, the other a wolf, and the last one is small but holds his own with the other two. </li>
+										<li> I use a mac. </li>
 									</ul>
 									</p>
 									<div class="content-box">
@@ -158,5 +166,12 @@
 
 	</body>
 
-
+<footer>
+	<div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<i class="fa fa-2x fa-arrow-circle-up"></i>
+	</span>
+	</div>
+	© 2016 Christopher A Paul
+</footer>
 </html>
