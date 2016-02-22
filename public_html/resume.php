@@ -149,8 +149,6 @@
 					</div>
 			</body>
 	<footer>
-
-		</div>
 		© 2016 Christopher A Paul
 	</footer>
 </html>

@@ -94,3 +94,9 @@
 					</div>
 				</div>
 			</body>
+
+			<footer>
+				© 2016
+				Christopher A Paul
+			</footer>
+</html
