@@ -36,3 +36,26 @@ Your Milestone 2&alpha; passes at [Tier III](https://bootcamp-coders.cnm.edu/pro
 
 #### Edits &amp; Suggestions
 - Your code structure is great, but you seem to be using `<p>` tags where you should be using `<div>` tags. `<p>` tags are for paragraphs of text, while `<div>` tags are containers for other elements.
+
+---
+
+### Milestone 2&beta; Feedback
+
+Looks good! I've left some comments down below, check back in with Rochelle or I later this week and we can help you move over to A Small Orange.
+
+Milestone 2&beta; 
+
+Your Milestone 2&beta; passes at [Tier IV](https://bootcamp-coders.cnm.edu/projects/personal/rubric/)
+
+#### Edits &amp; Suggestions
+- Don't use `<p>` tags as containers, either just leave them out, or use a `<div>` if a container is really necessary.
+- Remove the `xmlns` attributes from your `<html>` tags.
+- Image sizes need to be flexible and change sizes for different size screens, use `class="img-responsive"` instead of `width` and `height`.
+- Add that contact form on your contact page.
+
+#### Set up ASO Host:
+- Go over https://bootcamp-coders.cnm.edu/class-materials/php/email/, add composer.json and mailer.php
+- enable shell access - chat live support and request them to enable this
+- Add your public SSH key (CPanel, SSH Access)
+- Add an email account, and add an email forwarder if you like :)
+- Create a new deployment in PhpStorm that uploads to ASO, and upload your site there.
