@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en' xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang='en'>
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -30,30 +30,29 @@
 		<div class="sfooter-content">
 			<header>
 				<div class="container">
-					<nav class="navbar navbar-default">
-						<div class="container-fluid">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-							</div>
-
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<ul class="nav navbar-nav">
-									<li class="active"><a href="#">CP <span class="sr-only">(current)</span></a></li>
-									<li><a href="index.php">About Me</a></li>
-									<li><a href="resume.php">Resume</a></li>
-									<li><a href="contactMe.php">Contact Me</a></li>
-							</div><!-- /.navbar-collapse -->
-						</div><!-- /.container-fluid -->
-					</nav>
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
 				</div>
-			</header>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">CP<span class="sr-only">(current)</span></a></li>
+						<li><a href="index.php">About Me</a></li>
+						<li><a href="resume.php">Resume </a></li>
+						<li><a href="contactMe.php">Contact Me</a></li>
+				</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+		</nav>
+		</div>
+		</header>
 				<div class="col-md-12">
 					<div class="content-box">
 						<h1> Christopher Paul</h1>
@@ -89,7 +88,6 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h2>TECHNICAL SKILL SET</h2>
-							<p>
 							<ul>
 								<li>Programming Languages (HTML, JavaScript, jQuery, MySQL, CSS, PHP 5.6 and 7, OOP, Angular, and Bootstrap)</li>
 								<li> Web Servers (LAMP stack) </li>
@@ -103,47 +101,45 @@
 								<li> Microsoft Office Suite (Outlook, Word, Excel, PowerPoint, and Access) </li>
 								<li> Responsive and interactive front end development </li>
 							</ul>
-							</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<h2>WEB DESIGN PORTFOLIO</h2>
-							<p>
 							<ul>
 								<li><a href="https://christopherapaul.com">Christopherapaul.com </a></li>
 								<li><a href="https://github.com/chrispaul3625">GitHub.com/chrispaul3625 </a></li>
 							</ul>
-							</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<h2>EMPLOYMENT HISTORY</h2>
-								<h4>SolarCity  2/2014 – 12/2015</h4><h5> Site Surveyor</h5>
+								<h4>SolarCity  2/2014 - 12/2015</h4><h5> Site Surveyor</h5>
 								<p> Survey sites in San Diego, CA and Albuquerque, NM to obtain necessary data and measurements for the solar design process.  Documented substructure of the roof, rafter sizes/spacing and all obstructions on mounting planes that fell within the allowable azimuth range. Gathered necessary information of all HVAC equipment and electrical panel. Completed and uploaded documentation with professional audit paperwork and high quality photos. Quickly learned all procedures and became one of the top surveyors in the company and maintained a 5-star rating in Launchpad.  </p>
 
-							<h4>Premier Solar Solutions   10/2013 – 2/2014</h4><h5> Energy Auditor</h5>
-							<p> Performed In-Home Energy Audits for the California Clean Energy Act conversion program. Designed and fit solar system to homeowner’s roof. Explained conversion process and detailed utility usage offset of new system. Reported leads, sales, and customer information to management.</p>
+							<h4>Premier Solar Solutions 10/2013 - 2/2014  </h4> <h5> Energy Auditor</h5>
+							<p> Performed In-Home Energy Audits for the California Clean Energy Act conversion program. Designed and fit solar system to homeowners roof. Explained conversion process and detailed utility usage offset of new system. Reported leads, sales, and customer information to management  </p>
 
-							<h4>Down to Earth   5/2013 – 8/2013</h4><h5> General Contracting Intern </h5>
+							<h4>Down to Earth   5/2013 - 8/2013</h4><h5> General Contracting Intern </h5>
 							<p> Supported the General Contractor with roofing, painting, landscaping, dry wall, flooring, and general remodeling.</p>
 
-							<h4> University of New Mexico Hospital, Clinical Affairs Department     9/2010 – 3/20123</h4><h5>Technical Specialist</h5>
+							<h4> University of New Mexico Hospital, Clinical Affairs Department    9/2010 - 3/2013  </h4><h5>Technical Specialist</h5>
 							<p> Participated in treatments and assisted with billing, filing, scheduling, and patient correspondence. </p>
 
-							<h4> Advanced Healthcare of Albuquerque        2/2009 – 9/2010</h4><h5>Occupational Therapy Technician</h5>
+							<h4> Advanced Healthcare of Albuquerque        2/2009 - 9/2010</h4><h5>Occupational Therapy Technician</h5>
 							<p> Managed databases, created files, wrote documents, and provided support to internal and external customers.</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<h2>VOLUNTEER EXPERIENCE</h2>
-							<h4>Los Plobanos Farms   9/2011 – 12/2011</h4><h4> Permaculture and Design Program Volunteer </h4>
+							<h4>Los Plobanos Farms   9/2011 -12/2011</h4> <h5> Permaculture and Design Program Volunteer </h5>
 							<p> Assisted in the planning and development of greenhouse ventilation systems, irrigation trenches, and compost bins in addition to planting and caring farm crops and vegetation.</p>
 
-							<h4>Ampersand Sustainable Learning Center   10/2011 – 12/2011</h4><h5> Advanced Permaculture/Design Volunteer </h5>
-							<p> Supported the design and creation of sustainable systems that included solar ovens, green houses, rainwater catchment systems, irrigation channels, and a straw barrel home.</p>
+
+							<h4> Amperand Sustainable Learning Center 10/2011 - 12/2011 </h4> <h5> Advanced Permaculture/Design Volunteer </h5>
+							<p>Supported the design and creation of sustainable systems that included solar ovens, green houses, rainwater catchment systems, irrigation channels, and a straw barrel home.</p>
 						</div>
 					</div>
 					</div>

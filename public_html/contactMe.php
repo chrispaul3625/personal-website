@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang='en' xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-		xmlns="http://www.w3.org/1999/html">
+<html lang='en'>
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -26,39 +25,36 @@
 				  crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
-
+		<link rel="php" href="../php/contact.php">
 		<link rel="script" href="javascript/style.js">
 	</head>
 	<body class="sfooter">
 		<div class="sfooter-content">
 			<header>
 				<div class="container">
-					<nav class="navbar navbar-default">
-						<div class="container-fluid">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-										  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-							</div>
-
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<ul class="nav navbar-nav">
-									<li class="active"><a href="#">CP <span class="sr-only">(current)</span></a></li>
-									<li><a href="index.php">About Me</a></li>
-									<li><a href="resume.php">Resume</a></li>
-									<li><a href="contactMe.php">Contact Me</a></li>
-							</div><!-- /.navbar-collapse -->
-						</div><!-- /.container-fluid -->
-					</nav>
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
 				</div>
-			</header>
-			<body>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">CP<span class="sr-only">(current)</span></a></li>
+						<li><a href="index.php">About Me</a></li>
+						<li><a href="resume.php">Resume </a></li>
+						<li><a href="contactMe.php">Contact Me</a></li>
+				</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+		</nav>
+		</div>
+		</header>
 				<div class="containier">
 					<div class="row">
 						<div class="col-md-6">
@@ -81,6 +77,9 @@
 						<div class="col-md-6">
 							<div class="content-box">
 								<div class="jumbotron">
+								<h2> Send Me A Message</h2>
+
+									$ php composer.phar require swiftmailer/swiftmailer @stable
 
 									<h2> Contact Information</h2>
 									<h3>Email</h3>
@@ -96,7 +95,6 @@
 			</body>
 
 			<footer>
-				© 2016
-				Christopher A Paul
+				© 2016 Christopher A Paul
 			</footer>
 </html

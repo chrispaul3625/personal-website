@@ -12,7 +12,7 @@ div.jumbotron {
 	padding:5%;
 }
 
-nav {
+nav.navbar-default {
 	background-color: black;
 }
 a.thumbnail {
@@ -25,7 +25,11 @@ a.href {
 	background-color: white;
 }
 
-div.container-fluid {
+div.navbar-default{
+	background-color: black;
+}
+
+header {
 	background-color: black;
 }
 
