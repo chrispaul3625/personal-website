@@ -45,10 +45,10 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">CP<span class="sr-only">(current)</span></a></li>
+						<li class="active"><a href="index.php">CP<span class="sr-only">(current)</span></a></li>
 						<li><a href="index.php">About Me</a></li>
-						<li><a href="resume.php">Resume </a></li>
-						<li><a href="contactMe.php">Contact Me</a></li>
+						<li><a href="resume/index.php">Resume </a></li>
+						<li><a href="contact-me/index.php">Contact Me</a></li>
 				</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 		</nav>
@@ -72,7 +72,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="content-box">
-							<img src="documentation/images/myself.jpg" alt="Me!">
+							<img src="documentation/images/myself.jpg" alt="Me!" class="img-responsive">
 						</div>
 					</div>
 				</div>
@@ -127,13 +127,13 @@
 							<li> I enjoy being out on the water whether it be on a boat, paddle board, surf board, or simply
 								just swimming.
 							</li>
-							<li> Staying active and fit, a healthy body = a healthy mind!</li>
+							<li> I like staying active and fit, a healthy body = a healthy mind!</li>
 							<li> I am a very visual and hands on kind of learner.</li>
 							<li> I enjoy interacting with and meeting new people.</li>
 							<li> I have 3 dogs, one is more like a horse, the other a wolf, and the last one is small but holds
 								his own with the other two.
 							</li>
-							<li> I use a mac.</li>
+							<li> I use a Mac.</li>
 						</ul>
 						<div class="content-box">
 							<h2> Check Out Some Of My Work on GitHub</h2>

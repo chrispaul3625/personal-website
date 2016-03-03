@@ -24,9 +24,9 @@
 				  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
 				  crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="php" href="../php/contact.php">
-		<link rel="script" href="javascript/style.js">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="php" href="../contact-me/index.php">
+		<link rel="script" href="../javascript/style.js">
 	</head>
 	<body class="sfooter">
 		<div class="sfooter-content">
@@ -46,10 +46,10 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">CP<span class="sr-only">(current)</span></a></li>
-						<li><a href="index.php">About Me</a></li>
-						<li><a href="resume.php">Resume </a></li>
-						<li><a href="contactMe.php">Contact Me</a></li>
+						<li class="active"><a href="../index.php">CP<span class="sr-only">(current)</span></a></li>
+						<li><a href="../index.php">About Me</a></li>
+						<li><a href="../resume/index.php">Resume </a></li>
+						<li><a href="index.php">Contact Me</a></li>
 				</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 		</nav>
@@ -79,7 +79,29 @@
 								<div class="jumbotron">
 								<h2> Send Me A Message</h2>
 
-									$ php composer.phar require swiftmailer/swiftmailer @stable
+
+
+									<form action="../php-libs/phpMailer.php" method="post" enctype="multipart/form-data">
+										<div class="form-group">
+											<label for="name">Your name:</label>
+											<input type="text" name="name"  id="name" required>
+										</div>
+										<div class="form-group">
+											<label for="email">Your email:</label>
+											<input type="email" name="email"  id="email" required>
+										</div>
+										<div class="form-group">
+											<label for="message">Your message:</label>
+											<textarea name="message" id="message" required> </textarea>
+										</div>
+										<div class="form-group">
+											<input type="submit" value="Send Message!">
+										</div>
+									</form>
+
+
+
+
 
 									<h2> Contact Information</h2>
 									<h3>Email</h3>
@@ -97,4 +119,4 @@
 			<footer>
 				© 2016 Christopher A Paul
 			</footer>
-</html
+</html>

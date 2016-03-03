@@ -23,8 +23,8 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
 				  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
 				  crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="script" href="javascript/style.js">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="script" href="../javascript/style.js">
 	</head>
 	<body class="sfooter">
 		<div class="sfooter-content">
@@ -44,10 +44,10 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">CP<span class="sr-only">(current)</span></a></li>
-						<li><a href="index.php">About Me</a></li>
-						<li><a href="resume.php">Resume </a></li>
-						<li><a href="contactMe.php">Contact Me</a></li>
+						<li class="active"><a href="../index.php">CP<span class="sr-only">(current)</span></a></li>
+						<li><a href="../index.php">About Me</a></li>
+						<li><a href="index.php">Resume </a></li>
+						<li><a href="../contact-me/index.php">Contact Me</a></li>
 				</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 		</nav>

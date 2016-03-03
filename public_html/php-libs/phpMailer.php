@@ -4,7 +4,7 @@
  * while this is convenient, this may load too much if your composer configuration grows to many classes
  * if this is a concern, load "/vendor/swiftmailer/autoload.php" instead to load just SwiftMailer
  **/
-require_once(dirname(dirname(dirname(dirname(__DIR__)))) . "/vendor/autoload.php");
+require_once(dirname(dirname(dirname(dirname(__DIR__)))) . "vendor/autoload.php");
 
 try {
 	// create Swift message
@@ -12,7 +12,7 @@ try {
 
 	// attach the sender to the message
 	// this takes the form of an associative array where the Email is the key for the real name
-	$swiftMessage->setFrom(["deepdivecoder@cnm.edu" => "Deep Dive Coder"]);
+	$swiftMessage->setFrom(["christopher@christopherapaul.com" => "Christopher Paul"]);
 
 	/**
 	 * attach the recipients to the message

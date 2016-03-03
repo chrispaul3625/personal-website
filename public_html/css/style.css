@@ -29,10 +29,12 @@ div.navbar-default{
 	background-color: black;
 }
 
-header {
+button.navbar-toggle {
+	background-color: white;
+}
+button {
 	background-color: black;
 }
-
 
 ul.coding {
 	float: right;
@@ -40,4 +42,8 @@ ul.coding {
 
 img.class {
 	float: left;
+}
+
+header {
+	background-color: black;
 }
