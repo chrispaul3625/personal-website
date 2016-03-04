@@ -91,6 +91,10 @@
 											<input type="email" name="email"  id="email" required>
 										</div>
 										<div class="form-group">
+											<label for="Subject">Subject:</label>
+											<input type="text" name="subject"  id="subject" required>
+										</div>
+										<div class="form-group">
 											<label for="message">Your message:</label>
 											<textarea name="message" id="message" required> </textarea>
 										</div>
@@ -98,18 +102,6 @@
 											<input type="submit" value="Send Message!">
 										</div>
 									</form>
-
-
-
-
-
-									<h2> Contact Information</h2>
-									<h3>Email</h3>
-									<a href="mailto:christopher@christopherapaul.com"> christopher@christopherapaul.com</a>
-									<h3> Cell </h3>
-									<p>505-249-2236</p>
-									<h3> </h3>
-
 							</div>
 						</div>
 					</div>
@@ -117,6 +109,6 @@
 			</body>
 
 			<footer>
-				© 2016 Christopher A Paul
+				&copy; 2016 Christopher A Paul
 			</footer>
 </html>
