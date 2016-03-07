@@ -106,6 +106,9 @@
 						</div>
 					</div>
 				</div>
+					<script>$('.btn').on('click', function() {
+							alert("Message sent");
+						})</script>
 			</body>
 
 			<footer>
