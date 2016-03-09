@@ -25,8 +25,8 @@
 				  crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../css/style.css">
-		<link rel="php" href="../contact-me/index.php">
-		<link rel="script" href="../javascript/style.js">
+
+		<script src="../javascript/style.js" type="text/javascript"></script>
 	</head>
 	<body class="sfooter">
 		<div class="sfooter-content">
@@ -81,7 +81,7 @@
 
 
 
-									<form action="../php-libs/phpMailer.php" method="post" enctype="multipart/form-data">
+									<form id="contact-form" action="../php-libs/phpMailer.php" method="post" enctype="multipart/form-data">
 										<div class="form-group">
 											<label for="name">Your name:</label>
 											<input type="text" name="name"  id="name" required>
@@ -102,13 +102,11 @@
 											<input type="submit" value="Send Message!">
 										</div>
 									</form>
+									<div id="output-area"></div>
 							</div>
 						</div>
 					</div>
 				</div>
-					<script>$('.btn').on('click', function() {
-							alert("Message sent");
-						})</script>
 			</body>
 
 			<footer>

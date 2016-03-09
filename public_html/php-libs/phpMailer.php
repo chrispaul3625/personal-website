@@ -53,7 +53,7 @@ try {
 	$smtp = Swift_SmtpTransport::newInstance("localhost", 25);
 	$mailer = Swift_Mailer::newInstance($smtp);
 	$numSent = $mailer->send($swiftMessage, $failedRecipients);
-	header("Location: http://christopherapaul.com/contact-me/index.php");
+	//header("Location: http://christopherapaul.com/contact-me/index.php");
 
 	/**
 	 * the send method returns the number of recipients that accepted the Email
@@ -65,7 +65,7 @@ try {
 	}
 
 	// report a successful send
-	echo "<script>alert('Email successfully sent.');</script>";
+	echo "<div class=\"alert alert-success\" role=\"alert\">Email successfully sent.</div>";
 } catch(Exception $exception) {
 	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>Oh snap!</strong> Unable to send email: " . $exception->getMessage() . "</div>";
 }

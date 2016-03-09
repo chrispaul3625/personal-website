@@ -7,7 +7,7 @@
 	<body>
 		<div>
 		<h1>Interaction Flow</h1>
-		<img src="images/wireframes.JPG"/>
+		<img src="../../../christopherapaul.com/public_html/images/wireframes.JPG"/>
 		</div>
 	</body>
 </html>

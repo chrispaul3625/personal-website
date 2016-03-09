@@ -1,99 +1,76 @@
-<? // file '/index.php' ?>
 <?php
-// Required file to initialize the Swiftmailer
-require_once("./swiftmailer/lib/swift_required.php");
+/**
+ * require all composer dependencies; requiring the autoload file loads all composer packages at once
+ * while this is convenient, this may load too much if your composer configuration grows to many classes
+ * if this is a concern, load "/vendor/swiftmailer/autoload.php" instead to load just SwiftMailer
+ **/
+require_once(dirname(dirname(__DIR__)) . "/vendor/autoload.php");
 
-// Class that contains the information of the email that will be sent (from, to, etc.)
-require_once("./classes/EmailParts.php");
+try {
+	// sanitize the inputs from the form: name, email, subject, and message
 
-// The class that "breaks" the data sent with the HTML form to a more "usable" format.
-require_once("./classes/ContactForm.php");
+	// this assumes jQuery (not Angular will be submitting the form, so we're using the $_POST superglobal
 
-// =====================
-// Main configuration
-// =====================
-define("EMAIL_SUBJECT", "Contact form");		// Subject of the contact mail
-define("EMAIL_TO", "christopher@christopherapaul.com");		// Where the contact mail should be sent
+	$name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+	$subject = filter_input(INPUT_POST, "subject", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$message = filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 
-// SMTP configuration
-define("SMTP_SERVER", 'localhost');				// Your SMTP server host
-define("SMTP_PORT", 1025);						// Your SMTP server port
+	// create Swift message
 
-define("UPLOAD_DIR", 'public_html/composer.php');			// Default php upload dir
+	$swiftMessage = Swift_Message::newInstance();
 
-// main method. It's the first method called
-function main($contactForm) {
+	// attach the sender to the message
 
-	// Checks if something was sent to the contact form, if not, do nothing
-	if (!$contactForm->isDataSent()) {
-		return;
+	// this takes the form of an associative array where the Email is the key for the real name
+
+	$swiftMessage->setFrom([$email => $name]);
+
+	/**
+	 * attach the recipients to the message
+	 * notice this an array that can include or omit the the recipient's real name
+	 * use the recipients' real name where possible; this reduces the probability of the Email being marked as spam
+	 **/
+	$recipients = ["christopher@christopherapaul.com" => "Christopher Paul"];
+	$swiftMessage->setTo($recipients);
+
+	// attach the subject line to the message
+
+	$swiftMessage->setSubject($subject);
+
+	/**
+	 * attach the actual message to the message
+	 * here, we set two versions of the message: the HTML formatted message and a special filter_var()ed
+	 * version of the message that generates a plain text version of the HTML content
+	 * notice one tactic used is to display the entire $confirmLink to plain text; this lets users
+	 * who aren't viewing HTML content in Emails still access your links
+	 **/
+	$swiftMessage->setBody($message, "text/html");
+	$swiftMessage->addPart(html_entity_decode($message), "text/plain");
+
+	/**
+	 * send the Email via SMTP; the SMTP server here is configured to relay everything upstream via CNM
+	 * this default may or may not be available on all web hosts; consult their documentation/support for details
+	 * SwiftMailer supports many different transport methods; SMTP was chosen because it's the most compatible and has the best error handling
+	 * @see http://swiftmailer.org/docs/sending.html Sending Messages - Documentation - SwitftMailer
+	 **/
+	$smtp = Swift_SmtpTransport::newInstance("localhost", 25);
+	$mailer = Swift_Mailer::newInstance($smtp);
+	$numSent = $mailer->send($swiftMessage, $failedRecipients);
+
+	/**
+	 * the send method returns the number of recipients that accepted the Email
+	 * so, if the number attempted is not the number accepted, this is an Exception
+	 **/
+	if($numSent !== count($recipients)) {
+		// the $failedRecipients parameter passed in the send() method now contains contains an array of the Emails that failed
+
+		throw(new RuntimeException("unable to send email"));
 	}
 
-	// validates the contact form and initialize the errors
-	$contactForm->validate();
+	// report a successful send
 
-	$errors = array();
-
-	// if the contact form is not valid...
-	if (!$contactForm->isValid()) {
-		// gets the error in the array $errors
-		$errors = $contactForm->getErrors();
-
-	} else {
-		// if the contact form is valid...
-		try {
-			// send the email created with the contact form
-			$result = sendEmail($contactForm);
-
-			// after the email is sent, redirect and "die".
-			// We redirect to prevent refreshing the page which would resend the form
-			header("Location: ./success.php");
-			die();
-		} catch (Exception $e) {
-			// an error occured while sending the email.
-			// Log the error and add an error message to display to the user.
-			error_log('An error happened while sending email contact form: ' . $e->getMessage());
-			$errors['oops'] = 'Ooops! an error occured while sending your email! Please try again later!';
-		}
-
-	}
-
-	return $errors;
+	echo "<div class=\"alert alert-success\" role=\"alert\">Message Sent!.</div>";
+} catch(Exception $exception) {
+	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>Oh snap!</strong> Unable to send email: " . $exception->getMessage() . "</div>";
 }
-
-// Sends the email based on the information contained in the contact form
-function sendEmail($contactForm) {
-	// Email part will create the email information needed to send an email based on
-	// what was inserted inside the contact form
-	$emailParts = new EmailParts($contactForm);
-
-	// This is the part where we initialize Swiftmailer with
-	// all the info initialized by the EmailParts class
-	$emailMessage = Swift_Message::newInstance()
-		->setSubject($emailParts->getSubject())
-		->setFrom($emailParts->getFrom())
-		->setTo($emailParts->getTo())
-		->setBody($emailParts->getBodyMessage());
-
-	// If an attachment was included, add it to the email
-	if ($contactForm->hasAttachment()) {
-		$attachmentPath = $contactForm->getAttachmentPath();
-		$emailMessage->attach(Swift_Attachment::fromPath($attachmentPath));
-	}
-
-	// Another Swiftmailer configuration. You can change SMTP mode to Mail, Sendmail, etc.
-	// see http://swiftmailer.org/docs/sending.html for more details
-	$transport = Swift_SmtpTransport::newInstance(SMTP_SERVER, SMTP_PORT);
-	$mailer = Swift_Mailer::newInstance($transport);
-	$result = $mailer->send($emailMessage);
-	return $result;
-}
-
-// instantiate the ContactForm with the information of the form and the possible uploaded file
-$contactForm = new ContactForm($_POST, $_FILES);
-
-// we are calling the "main" method. It will return a list of errors.
-$errors = main($contactForm);
-
-// we call the "contactForm" view to display the HTML contact form
-require_once("./classes/contactForm.php");

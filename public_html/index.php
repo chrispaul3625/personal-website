@@ -78,16 +78,16 @@
 				</div>
 				<div class="row">
 					<div class="col-md-3" class="thumbnail">
-							<img src="documentation/images/boat.jpg" class="img-responsive">
+						<img src="documentation/images/boat.jpg" class="img-responsive">
 					</div>
 					<div class="col-md-3" class="thumbnail">
-							<img src="documentation/images/beach.jpg" class="img-responsive">
+						<img src="documentation/images/beach.jpg" class="img-responsive">
 					</div>
 					<div class="col-md-3" class="thumbnail">
-							<img src="documentation/images/buddy.jpg" class="img-responsive">
+						<img src="documentation/images/buddy.jpg" class="img-responsive">
 					</div>
 					<div class="col-md-3" class="thumbnail">
-							<img src="documentation/images/blackwhite.jpg" class="img-responsive">
+						<img src="documentation/images/blackwhite.jpg" class="img-responsive">
 					</div>
 				</div>
 			</div>
@@ -111,12 +111,12 @@
 						<li> User Experience</li>
 					</ul>
 				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<img class="graph" src="documentation/images/graph.svg">
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<img class="graph" src="documentation/images/graph.svg">
-					</div>
-				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="content-box">
@@ -157,6 +157,6 @@
 	</body>
 
 	<footer>
-		© 2016 Christopher A Paul
+		&copy; 2016 Christopher A Paul
 	</footer>
 </html>
